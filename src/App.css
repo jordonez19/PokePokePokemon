@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+.content {
+  /* background-color: black; */
+  max-width: 1080px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 25px;
+
+}
+.content h1 {
+  color: red;
+  letter-spacing: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+
+}
+.search-container {
+  text-align: center;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.search-container input {
+  text-align: center;
+  width: 100%;
+  border: rgb(180, 171, 171) solid 0.5px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.search-container input:focus {
+  border: #f52020 solid;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.pokemon-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 15px auto;
+}
+
+.active > .page-link,
+.page-link.active {
+  background-color: #f52020 !important;
+  border-color: #f52020 !important;
+  color: rgb(252, 250, 248) !important;
+}
+
+.page-link {
+  color: #f52020 !important;
+  font-weight: bold;
+}
+.pokemon-card {
+  border: solid #f52020 2px;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 10px;
+  box-shadow: rgb(131, 87, 87) 3px 3px 5px, inset 0 0 15px red;
+  text-align: center;
+  color: #3a3939;
+  background-color: #fff;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  width: 245px;
 }
